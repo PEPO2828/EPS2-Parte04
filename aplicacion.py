@@ -33,11 +33,28 @@ def Registrar():
     return menu()
     
 def eliminar():
-    return 
+    conexion=sqlite3.connect("Baldeon_Figueroa_almacen.db")
+    cursor=conexion.cursor()
+    id_producto=int(input("Ingrese el id del producto a eliminar: "))
+    consulta="DELETE FROM Producto where idproducto=?"
+    cursor.execute(consulta,(id_producto,))
+    conexion.commit()
+    conexion.close()
+    return menu()
     
+  
 def editar():
-
-    return
+    conexion=sqlite3.connect("Baldeon_Figueroa_almacen.db")
+    cursor=conexion.cursor()
+    edit_nom=input("Ingrese el nombre del producto a modificar: ")
+    cod=input("Ingrese el nuevo código del producto: ")
+    nom=input("Ingrese el nuevo nombre del producto: ")
+    precio=float(input("Ingrese el nuevo precio del producto: "))
+    consulta="UPDATE Producto SET codigo=?, nombre=?, precio=? WHERE nombre=?"
+    cursor.execute(consulta,(cod,nom,precio,edit_nom))
+    conexion.commit()
+    conexion.close()
+    return menu()
     
 def listar():
     conexion = sqlite3.connect("Baldeon_Figueroa_almacen.db")
@@ -72,5 +89,5 @@ def menu():
     elif opcion == "5":
         salir()
         
+        
 menu()
-    

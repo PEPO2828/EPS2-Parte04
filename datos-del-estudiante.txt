@@ -1,0 +1,13 @@
+ntegrantes
+Nombre del Estudiante 01:Granados Esteban Adrian Eduardo
+Git Hub: https://github.com/Nott123/EPS2-Parte01.git
+
+Nombre del Estudiante 02:Baldeon Figueroa Jhon Percy
+Git Hub: https://github.com/JhonBaldeon/EPS2-Parte02.git
+
+
+Nombre del Estudiante 03:Pineda Urquiza Carlos Antonio:
+Git Hub:  https://github.com/Pineda666/EPS2-Parte03.git
+
+Nombre del Estudiante 04
+Git Hub: https://github.com/PEPO2828/EPS2-Parte04.git
